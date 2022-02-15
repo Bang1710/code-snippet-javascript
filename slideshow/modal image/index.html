@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Modal Image</title>
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<div class="grid">
+			<div class="row">
+				<div class="col l-2-4">
+					<img
+						src="/slideshow/nature_1.jfif"
+						alt="The Woods"
+						class="image-demo"
+					/>
+				</div>
+
+				<div class="col l-2-4">
+					<img
+						src="/slideshow/nature_2.jfif"
+						alt="Cinque Terre"
+						class="image-demo"
+					/>
+				</div>
+
+				<div class="col l-2-4">
+					<img
+						src="/slideshow/nature_3.jfif"
+						alt="Mountains and fjords"
+						class="image-demo"
+					/>
+				</div>
+
+				<div class="col l-2-4">
+					<img
+						src="/slideshow/nature_4.jfif"
+						alt="Northern Lights"
+						class="image-demo"
+					/>
+				</div>
+
+				<div class="col l-2-4">
+					<img
+						src="/slideshow/nature_5.jfif"
+						alt="Nature and sunrise"
+						class="image-demo"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-image">
+            <a href="#" class="close" >&times;</a>
+			<img class="image-modal" />
+			<div class="caption-text"></div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<script src="./main.js"></script>
+		
+	</body>
+</html>

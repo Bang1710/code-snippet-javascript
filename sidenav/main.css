@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Satisfy", cursive;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.5rem;
+	overflow-x: hidden;
+	font-weight: 300;
+	/* scroll-behavior: smooth; */
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: "Comic Neue", cursive;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+	outline: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+    margin: 60px auto;
+    text-align: left;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: margin-left .4s linear;
+}
+
+button {
+    padding: 12px 15px;
+    font-size: 2rem;
+    background-color: #616161;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.active {
+    background-color: #059862;
+}
+
+
+.main-sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* bottom: 0; */
+    background-color: #616161;
+    transition: .4s;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px;
+}
+
+a {
+    font-size: 2.6rem;
+    color: white;
+    padding: 8px 8px 8px 16px;
+    text-align: center;
+    transition: 0.3s;
+    display: block;
+}
+
+a:hover {
+    color: #f1f1f1;
+  }
+  
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 5rem;
+}
