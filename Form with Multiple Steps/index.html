@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form with Multiple Steps</title>
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form id="regForm" action="">
+				<h1>Register</h1>
+
+				<!-- One "tab" for each step in the form: -->
+				<div class="tab">
+					Name:
+					<p>
+						<input type="text" placeholder="First name..."  required title="Please fill in the first name" />
+					</p>
+					<p>
+						<input type="text" placeholder="Last name..."  required  title="Please fill in the last name"/>
+					</p>
+				</div>
+
+				<div class="tab">
+					Contact Info:
+					<p><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="123@gmail.com"  required/></p>
+					<p><input type="text" pattern=".{9,}" placeholder="123456789"  required /></p>
+				</div>
+
+				<div class="tab">
+					Birthday:
+					<p><input type="text"  placeholder="DD" required   /></p>
+					<p><input type="text" placeholder="MM" required   /></p>
+					<p><input type="text" placeholder="YYYY" required   /></p>
+				</div>
+
+				<div class="tab">
+					Login Info:
+					<p>
+						<input type="text" placeholder="Username..."  />
+					</p>
+					<p>
+						<input type="password" placeholder="Password..."  />
+					</p>
+				</div>
+
+				<div style="overflow: auto">
+					<div style="float: right">
+						<button type="button" class="prevBtn" onclick="nextPrev(-1)">
+							Previous
+						</button>
+						<button type="button" class="nextBtn" onclick="nextPrev(1)">
+							Next
+						</button>
+					</div>
+				</div>
+
+				<!-- Circles which indicates the steps of the form: -->
+				<div style="text-align: center; margin-top: 40px">
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+				</div>
+			</form>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto 0;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.process-bar {
+    font-size: 1.6rem;
+    width: 0;
+    height: 16px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    /* padding: 4px; */
+    display: block;
+    /* position: fixed; */
+    /* flex: 1; */
+}
+
+p {
+    font-size: 1.8rem;
+    padding: 10px 0;
+    color: black;
+}
+
+.show-percent {
+    font-size: 2rem;
+    color: green;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.fixed {
+    position: fixed;
+    width: 80%;
+
+}
+

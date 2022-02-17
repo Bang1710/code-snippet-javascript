@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #f1f1f1;
+}
+
+.container {
+	width: 35%;
+	margin: 60px auto;
+}
+
+form {
+	background-color: white;
+	margin: 60px auto;
+	padding: 40px;
+	width: 100%;
+	min-width: 300px;
+}
+
+input {
+	padding: 10px 14px;
+	width: 100%;
+	font-size: 1.8rem;
+	font-family: Raleway;
+	border: 1px solid #aaaaaa;
+	margin: 8px 0;
+	outline: none;
+	border-radius: 5px;
+    transition: all .3s linear;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	padding: 2px 0 10px 0;
+}
+
+.tab {
+	font-size: 1.8rem;
+	font-weight: 500;
+	padding: 8px 0;
+    transition: all .3s linear;
+    animation: fade .3s linear;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.6;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hide all steps by default: */
+.tab {
+	display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.8;
+}
+
+/* Mark the active step: */
+.step.active {
+	opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color: green;
+}
+
+button {
+	background-color: #04aa6d;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+    margin: 10px 4px;
+}
+
+button:hover {
+	background-color: #555555;
+}
+
+#prevBtn {
+	background-color: #bbbbbb;
+}
+
+

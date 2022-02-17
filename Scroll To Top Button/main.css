@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    overflow: scroll;
+    transition: all 0.2 linear;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+h2 {
+    font-size: 2.6rem;
+    color: #555555;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 2rem;
+    letter-spacing: 0.7px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+button.btn {
+    position: fixed;
+    bottom: 25px;
+    right: 33px;
+    font-size: 2rem;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid #787676;
+    z-index: 1;
+    font-weight: 500;
+    transition: all 0.2 linear;
+    display: none;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #555555;
+    color: white;
+}

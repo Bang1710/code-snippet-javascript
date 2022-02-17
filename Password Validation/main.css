@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+	background-color: #04aa6d;
+	color: white;
+	cursor: pointer;
+}
+
+
+.container {
+	width: 60%;
+	margin: 80px auto;
+	padding: 10px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+h2 {
+	font-size: 2rem;
+	padding: 11px 2px;
+}
+
+label {
+	font-size: 1.8rem;
+	padding: 4px 2px;
+}
+
+input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	outline: none;
+	font-size: 1.8rem;
+}
+
+.valid {
+	color: green;
+}
+
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+	color: red;
+}
+
+
+.message {
+    font-size: 1.7rem;
+    transition: all .3s linear;
+    display: none;
+}
+
+span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: red;
+}
+
+
+span:nth-child(1) {
+    color:black;
+}
+
+.password-form {
+    position: relative;
+}
+
+.hide-password,
+.show-password {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    right: 13px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: all .2s linear;
+    color: black;
+}
+
+
+.show-password {
+    display: none;
+}
