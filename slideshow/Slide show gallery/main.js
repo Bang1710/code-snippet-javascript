@@ -34,5 +34,5 @@ function showSlides(n) {
 
     slides[slideIndex -1].style.display = 'block';
     imageTest[slideIndex -1].className += ' active';
-    captionText.innerHTML = imageTest[slideIndex -1].alt
+    // captionText.innerHTML = imageTest[slideIndex -1].alt
 }
